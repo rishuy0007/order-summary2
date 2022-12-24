@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;700;800&family=Outfit:wght@500;700;900&display=swap');
+
+
+    *{
+      box-sizing: border-box;
+    }
+
+    body{
+      background-color: hsl(225, 100%, 94%);
+      text-align: center;
+      font-family: 'Inter' , sans-serif;
+    }
+
+    .container
+    {
+      width: 400px;
+      background-color: hsl(225, 100%, 98%);
+      
+      box-shadow: 0 4px 8px 0 rgba(0 , 0 , 0 ,0.2);
+      border-radius: 10px;
+      margin-top: 50%;
+      margin: auto;
+
+    }
+
+    .price1
+    {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 30px;
+      align-items: center;
+      justify-content: center;
+
+      
+    }
+    .price
+    {
+      border-radius: 20px;
+    }
+    .container2
+    {
+      padding: 0px 30px 10px 30px;
+      line-height: 1.8;
+    }
+
+    input[type="button"]
+    {
+      
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: grab;
+    width: 100%;
+    box-shadow: 5px 20px 5px hsl(224, 37%, 92%);
+    font-size: 18px;
+
+    }
+
+    input[type="button"]:hover
+    {
+      color: white;
+      background-color: hsl(245, 82%, 71%);
+
+    }
+    .box
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: flex-end;
+      
+    }
+    @media only screen and (max-width:375px){
+  .container
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="container1" style="height: 100%;">
+      <img src="images/illustration-hero.svg" alt="error" width="400px" style="border-radius: 10px 10px 0px 0px;">
+
+    </div>
+    <div class="container2">
+      <h1> Order Summary</h1>
+      <p style="font-size: 16px; color: hsl(233, 6%, 69%); font-size: 18px;" >You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!</p>
+
+
+
+        <div class="price" style="background-color: hsla(228, 21%, 91%, 0.196);">
+          <div class="price1"><img src="./images/icon-music.svg" alt="" style="display: inline-block;">
+            <div style="vertical-align: middle;"><b>Annual plan </b> <br> <div style="color:hsl(233, 6%, 69%);">$59.9/year</div>  </div>
+            <div class="box"><a href="#">Change</a> </div>
+            
+          </div>
+          
+        </div>
+        <br>
+
+        <input type="button" value="Proceed to Payment" class="button">
+        <h3>Cancel Order</h3>
+        
+
+    </div>
+  </div>
+
+
+
+
+
+
+</body>
+</html>
